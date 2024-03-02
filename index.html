@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>solar</title>
+        <style>
+body{
+    background: url(stars.jpeg);
+    background-size: cover;
+    position: relative;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.2; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.pluto{
+    width: 700px;
+    height: 700px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    animation: pluto 50s infinite linear;
+    /* transition: 1s; */
+    
+}
+/* .pluto:hover{
+    transform: rotate(360deg);
+} */
+.pluto img{
+    position: absolute;
+    top: 50px;
+    left: 140px;
+   
+    
+}
+@keyframes pluto {
+    0%{
+        transform: rotate(360deg);
+    }   
+    
+} 
+
+.saturn{
+    width: 600px;
+    height: 600px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    /* transition: 1s; */
+    animation: pluto 10s infinite linear;
+}
+/* .saturn:hover{
+    transform: rotate(360deg);
+} */
+
+.jupiter{
+    width: 500px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    transition: 1s;
+    animation: pluto 10s infinite linear;
+}
+/* .jupiter:hover{
+    transform: rotate(360deg);
+} */
+.mars{
+    width: 400px;
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 150px;
+    left: 150px;
+    position: absolute;
+    transition: 1s;
+    animation: pluto 10s infinite linear;
+}
+/* .mars:hover{
+    transform: rotate(360deg);
+} */
+.earth{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 200px;
+    left: 200px;
+    position: absolute;
+    transition: 1s;
+    animation: pluto 30s infinite linear;
+    
+}
+/* .earth .moon:hover{
+    transform: rotate(360deg);
+} */
+/* .earth:hover{
+    transform: rotate(360deg);
+} */
+.venus{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    top: 250px;
+    left: 250px;
+    position: absolute;
+    /* transition: 1s; */
+    animation: pluto 10s infinite linear;
+}
+/* .venus:hover{
+    transform: rotate(360deg);
+} */
+.sun{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gold;
+    border-radius: 50%;
+    background-color: gold;
+    top: 300px;
+    left: 300px;
+    position: absolute;
+    box-shadow: 0px 0px 10px 10px gold;
+}
+  .saturnicon{
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 370px;
+   right: 0px;
+   transition: 1s;
+   animation: pluto 5s infinite linear;
+}
+/* .saturnicon:hover{
+    transform: rotate(360deg);
+} */
+.jupitericon{
+    width: 20px;
+    height: 20px;
+    background-color: palevioletred;
+    border-radius: 50%;
+    position: absolute;
+    top: 170px;
+   right: 0px;
+   transition: 1s;
+   animation: pluto 5s infinite linear;
+}
+/* .jupitericon:hover{
+    transform: rotate(360deg);
+} */
+ .marsicon{
+    width: 20;
+    height: 20px;
+    background-color: saddlebrown;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    transition: 1s;
+
+}
+/* .marsicon:hover{
+    transform: rotate(360deg);
+} */
+.earthicon{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    top: 90px;
+    right: 0px;
+    transition: 1s;
+    /* transform: rotateZ(360deg); */
+    animation: moon 10s infinite linear;
+}
+@keyframes moon {
+    0%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+/* .earthicon:hover{
+    transform: rotate(360deg);
+} */
+ .venusicon{
+    width: 20px;
+    height: 20px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    transition: 1s;
+ }
+ /* .venusicon:hover{
+    transform: rotate(360deg);
+ } */
+.moon{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    transition: 1s;
+}   
+/* .moon:hover{
+    transform: rotate(360deg);
+}  */
+        </style>
+    </head>
+    <body>
+        <div class="main">
+<div class="pluto">
+    <img src="saturn.png" height="20px" width="20px">
+     <div class="saturn">
+        <div class="saturnicon"></div>
+    </div> 
+    <div class="jupiter">
+        <div class="jupitericon"></div>
+    </div>
+    <div class="mars">
+        <div class="marsicon"></div>
+    </div>
+    <div class="earth">
+        <div class="earthicon">
+            <div class="moon"></div>
+        </div>
+        
+    </div>
+    <div class="venus">
+        <div class="venusicon"></div>
+    </div>
+    <div class="sun"></div> 
+    
+</div>
+</div>
+    </body>
+</html>
